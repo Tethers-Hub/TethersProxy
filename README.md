@@ -1,4 +1,4 @@
-# [Tether's Proxy](https://github.com/NCCoder1/TethersProxy)
+# [Tether's Proxy](https://github.com/Tethers-Hub/TethersProxy)
 ### Proxy designed for Tether's Hub. 
 
 - Url Encoding
