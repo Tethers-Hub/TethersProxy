@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Important: Use &zwnj; to mess with keywords.  -->
+	
+	<meta name="description" content="A no&zwnj;de.js web pr&zwnj;oxy featuring UR&zwnj;L enco&zwnj;ding, and amazing compatablity!">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/assets/css/styles.css"> </head>
+
+</body>
+ <!-- Trigger/Open The Modal  TAB CLOAK -->
+<i id="myBtn"class="fa-sharp fa-solid fa-gear"></i>
+<i onclick="Go()"class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content --> 
+  <div class="modal-content"> <center>
+    <span class="close">&times;</span>
+    <div class="section-title">Tab Cloak</div> <br>
+  <div class="buttons"> <center>
+    <input id="title" class="input" placeholder="Title" onkeyup="setTitle(this.value)" />
+    <input id="icon" class="input" placeholder="Favicon" onkeyup="setFavicon(this.value.trim())" />
+  </div></center>
+  <br><center>
+  <p class="section-text">Or choose a readymade cloak:</p>
+  <div class="buttons">
+      <select name="Readymade Cloaks" id="premadecloaks" title="Cloaks">
+        <option value="search">Google Search</option>
+        <option value="drive">Google Drive</option>
+        <option value="youtube">YouTube</option>
+        <option value="gmail">Gmail</option>
+        <option value="calendar">Google Calendar</option>
+        <option value="meets">Google Meet</option>
+        <option value="classroom">Google Classroom</option>
+        <option value="canvas">Canvas</option>
+        <option value="zoom">Zoom</option>
+        <option value="khan">Khan Academy</option>
+      </select></center><center> <br>
+      
+      <button class="button button2" onclick="setCloak()">Set readymade cloak</button>
+      <button class="button button2" onclick="resetTab()">Reset</button>
+    </div>
+      </center>
+  </div>
+
+</div>
+
+  
+	<!--Display Frame-->
+	<iframe id="frame" style="display:block; visibility: hidden;"></iframe>
+	<div class="container">
+		<p> <span class="black_text">Tethers&zwnj; Pro&zwnj;xy</span> </p> <br>
+		<form class="url" method="POST">
+			<input name="url" id="iurl" autocomplete="off" placeholder="https://example.com" type="text">
+			<button class="btn" type="submit" id="alloydefault">Norm&zwnj;al</button>
+			<button class="btn" type="submit" id="alloyframe">Hidd&zwnj;en</button> <a  href="https://github.com/NCCoder1/TethersProxy" target="_blank">GitHub</a> 
+	</div>
+    	<div style="position: relative; text-align: center">
+        <a  href="https://discord.gg/tethershub" target="_blank">Join Discord</a> </form>
+       <p style="position: fixed; bottom: 0; width:100%;">Made by Tethers  Hub</p>
+    	</div>
+	<!--Scripts-->
+	<script src="/assets/js/surf.js"></script>
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/modal.js"></script>
+  <script src="/assets/js/settings.js"></script>
+  <script src="/assets/js/index.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
